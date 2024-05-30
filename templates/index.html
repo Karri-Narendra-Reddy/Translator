@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate JSON</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="body">
+        <div></div>
+        <h1>Translate JSON File</h1>
+        <form action="/translate" method="post">
+            <label for="language">Choose a language:</label><br>
+            <select id="language" name="language">
+                <option value="" disabled selected>Select from dropdown</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Assamese">Assamese</option>
+                <option value="Gujarati">Gujarati</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Malayalam">Malayalam</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Odia">Odia</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Dogri">Dogri</option>
+                <option value="Urdu">Urdu</option>
+                <option value="French">French</option>
+                <option value="Nepali">Nepali</option>
+                <option value="Konkani">Konkani</option>
+            </select><br><br>
+
+<!--            <label>Choose Type of Evaluation:</label><br>-->
+<!--            <div class="row">-->
+<!--                <input type="radio" id="option1" name="option" value="BLEU" required>-->
+<!--                <label for="option1">BLEU</label><br>-->
+<!--            </div>-->
+
+<!--            <div class="row">-->
+<!--                <input type="radio" id="option2" name="option" value="BERT">-->
+<!--            <label for="option2">BERT</label><br>-->
+<!--            </div>-->
+
+<!--            <div class="row">-->
+<!--                <input type="radio" id="option3" name="option" value="OpenAI Eval">-->
+<!--                <label for="option3">OpenAI Eval</label><br><br>-->
+<!--            </div>-->
+
+
+            <button type="submit" value="Translate">Submit</button>
+            <div id="loadingSpinner"></div>
+
+        </form>
+
+        <script src="{{ url_for('static', filename='css/spinner.js') }}"></script>
+    </div>
+</body>
+</html>

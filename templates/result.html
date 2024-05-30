@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <h1>Translation Result</h1>
+    <p>Language: {{ language }}</p>
+    <div class="container">
+        <div class="column">
+            <h2>Original Text</h2>
+            <pre>{{ original_text }}</pre>
+        </div>
+        <div class="column">
+            <h2>Translated Text</h2>
+            <pre>{{ translated_text }}</pre>
+        </div>
+    </div>
+    <h1>Translation Evaluation Score</h1>
+    <div class="container">
+        <div class="column">
+            <h2>BLEU Score</h2>
+            <pre>{{ bleu }}</pre>
+        </div>
+        <div class="column">
+            <h2>BERT Score</h2>
+            <pre>Precision (P): {{ P }}</pre>
+            <pre>Recall (R): {{ R }}</pre>
+            <pre>F1 Score: {{ F1 }}</pre>
+        </div>
+    </div>
+    <a href="/">Translate another JSON</a>
+</body>
+</html>

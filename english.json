@@ -1,0 +1,62 @@
+{
+  "questions": [
+    {
+      "question": "If a friend or family member recommends a new product to you, which statement below best describes how you would feel about buying it?",
+      "type": "single-choice",
+      "options": [
+        "Definitely would buy",
+        "Probably would buy",
+        "Might or might not buy",
+        "Probably would not buy",
+        "Definitely would not buy"
+      ]
+    },
+    {
+      "question": "Imagine you are interested in buying a new product that your household would use up every few days. How many packages do you expect you would buy the first time you purchased this product?",
+      "type": "single-choice",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Eight",
+        "Nine or more"
+      ]
+    },
+    {
+      "question": "How often do you tend to buy new products?",
+      "type": "single-choice",
+      "options": [
+        "Very often",
+        "Often",
+        "Somewhat often",
+        "Not very often",
+        "Never"
+      ]
+    },
+    {
+      "question": "How much do you agree or disagree with the following statement: My friends and family typically look for new products that offer a good value.",
+      "type": "single-choice",
+      "options": [
+        "Agree strongly",
+        "Agree somewhat",
+        "Neither agree nor disagree",
+        "Disagree somewhat",
+        "Disagree strongly"
+      ]
+    },
+    {
+      "question": "Think about the products that you buy. If a product you usually buy was not available, which statement best describes the alternatives that are available for you?",
+      "type": "single-choice",
+      "options": [
+        "Many alternatives",
+        "Few alternatives",
+        "1-2 alternatives",
+        "No alternatives"
+      ]
+    }
+  ]
+}
